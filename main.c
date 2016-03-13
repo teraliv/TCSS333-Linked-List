@@ -178,9 +178,10 @@ void testDeleteAll() {
 
     struct node *intlist = NULL;
     int i;
-
-    int data2[] = {5,5,8,8,8,8,8,6};
-
+    
+    intlist = add_to_list(intlist, 9);
+    intlist = add_to_list(intlist, 9);
+    intlist = add_to_list(intlist, 1);
     intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 8);
@@ -188,30 +189,11 @@ void testDeleteAll() {
     intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 4);
     intlist = add_to_list(intlist, 5);
-    intlist = add_to_list(intlist, 5);   
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 6); 
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-    intlist = add_to_list(intlist, 8);
-
-
-    // intlist = add_to_list(intlist, 9);
-    // intlist = add_to_list(intlist, 1);
-    // intlist = add_to_list(intlist, 4);
-    // intlist = add_to_list(intlist, 5);
-    // intlist = add_to_list(intlist, 1);
-    // intlist = add_to_list(intlist, 9);
-    // intlist = add_to_list(intlist, 9);
+    intlist = add_to_list(intlist, 1);
+    intlist = add_to_list(intlist, 9);
+    intlist = add_to_list(intlist, 9);
 
 
     printf("Original list\n");
@@ -221,19 +203,19 @@ void testDeleteAll() {
     intlist = deleteAll(intlist, 8);
     printAll(intlist); 
 
-    // printf("\nRemove all occurences of 9\n");
-    // intlist = deleteAll(intlist, 9);
-    // printAll(intlist);    
+    printf("\nRemove all occurences of 9\n");
+    intlist = deleteAll(intlist, 9);
+    printAll(intlist);    
 
-    // printf("\nRemove all occurences of 1\n");
-    // intlist = deleteAll(intlist, 1);
-    // printAll(intlist);
+    printf("\nRemove all occurences of 1\n");
+    intlist = deleteAll(intlist, 1);
+    printAll(intlist);
 
-    // printf("\nRemove all occurences of 4\n");
-    // intlist = deleteAll(intlist, 4);
-    // printAll(intlist);    
+    printf("\nRemove all occurences of 4\n");
+    intlist = deleteAll(intlist, 4);
+    printAll(intlist);    
 
-    // printf("\nRemove all occurences of 5\n");
-    // intlist = deleteAll(intlist, 5);
-    // printAll(intlist);
+    printf("\nRemove all occurences of 5\n");
+    intlist = deleteAll(intlist, 5);
+    printAll(intlist);
 }
