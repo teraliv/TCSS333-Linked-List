@@ -245,11 +245,15 @@ struct node *deleteAll(struct node *list, int n) {
         if (curr == NULL)
             return list;
 
-        prev = curr;
-        curr = curr->next;
-        
+        // move prev and curr node pointers only if
+        // curr->value is other than N
+        if (curr->value != n) {
+            prev = curr;
+            curr = curr->next;
+        }
+
         // N is in other node
-        if (curr != NULL && curr->value == n) {
+        if (curr != NULL && prev != NULL && curr->value == n) {
             temp = curr;
             prev->next = curr->next;
             curr = curr->next;

@@ -181,7 +181,13 @@ void testDeleteAll() {
 
     int data2[] = {5,5,8,8,8,8,8,6};
 
-    
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 5);
     intlist = add_to_list(intlist, 5);   
     intlist = add_to_list(intlist, 8);
@@ -190,6 +196,14 @@ void testDeleteAll() {
     intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 8);
     intlist = add_to_list(intlist, 6); 
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+    intlist = add_to_list(intlist, 8);
+
 
     // intlist = add_to_list(intlist, 9);
     // intlist = add_to_list(intlist, 1);
